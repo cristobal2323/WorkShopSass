@@ -43,6 +43,13 @@
 /* ----- */
 /* Mixin */
 /* ----- */
+/* ------ */
+/* Extend */
+/* ------ */
+.title, .principal-1, .principal-2, .principal-3 {
+  text-align: center;
+  font-size: 2em; }
+
 .principal-1 {
   width: 900px;
   margin: 1em auto;
