@@ -123,7 +123,22 @@ $fuente : arial;
 		background: colorea(4);
 		height: 200px;
 		box-sizing: border-box;
-		
 		border: solid 2px $blanco;
 	}
+}
+
+
+/* ---------- */
+/* Bucle Each */
+/* ---------- */
+
+$textos : (
+    text-1 : red,
+    text-2 : blue,
+    text-3 : green,
+    text-4 : yellow,
+);
+
+@each $texto,$colores in $textos{
+    .#{$texto} { color: $colores; }
 }
