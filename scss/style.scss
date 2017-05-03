@@ -8,6 +8,20 @@ $blanco : #fff;
 $gris:  #ccc;
 $fuente : arial;
 
+/* ----- */
+/* Bonus */
+/* ----- */
+
+$phablet : 640px;
+
+@mixin media-query( $type ){
+	@if $type == phablet-down {
+	    @media only screen and (max-width: $phablet) { @content; }
+	}
+}
+@mixin phablet-down { @include media-query(phablet-down) { @content }; }
+
+
 /* ------------------------------- */
 /* Anidamiento y Pseudo Selectores */
 /* ------------------------------- */
@@ -109,6 +123,8 @@ $fuente : arial;
 	}
 }
 
+
+
 /* ----------------- */
 /* Funciones Nativas */
 /* ----------------- */
@@ -124,6 +140,9 @@ $fuente : arial;
 		height: 200px;
 		box-sizing: border-box;
 		border: solid 2px $blanco;
+		@include phablet-down {
+			width: grilla(1);
+		}
 	}
 }
 
@@ -142,3 +161,4 @@ $textos : (
 @each $texto,$colores in $textos{
     .#{$texto} { color: $colores; }
 }
+

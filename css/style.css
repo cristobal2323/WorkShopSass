@@ -1,6 +1,9 @@
 /* --------- */
 /* Variables */
 /* --------- */
+/* ----- */
+/* Bonus */
+/* ----- */
 /* ------------------------------- */
 /* Anidamiento y Pseudo Selectores */
 /* ------------------------------- */
@@ -88,6 +91,9 @@
     height: 200px;
     box-sizing: border-box;
     border: solid 2px #fff; }
+    @media only screen and (max-width: 640px) {
+      .footer .foot-a, .footer .foot-b {
+        width: 100%; } }
 
 /* ---------- */
 /* Bucle Each */
