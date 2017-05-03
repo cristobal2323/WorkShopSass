@@ -7,10 +7,9 @@ $menu : #6E6E6E;
 $blanco : #fff;
 $fuente : arial;
 
-
-/* ----------- */
-/* Anidamiento */
-/* ----------- */
+/* ------------------------------- */
+/* Anidamiento y Pseudo Selectores */
+/* ------------------------------- */
 
 *{
 	margin: 0;
@@ -27,7 +26,20 @@ $fuente : arial;
 		background: $logo;
 		width: 400px;
 		text-align: center;
-		font-family: $fuente;
+		h1{
+			font-family: $fuente;
+			&:hover{
+				color: $blanco;
+			}
+			&:before{
+				content: "<-";
+				display: inline-block;
+			}
+			&:after{
+				content: "->";
+				display: inline-block;
+			}
+		}
 	}
 	.menu{
 		padding: 1em;

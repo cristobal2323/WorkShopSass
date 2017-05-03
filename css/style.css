@@ -1,9 +1,9 @@
 /* --------- */
 /* Variables */
 /* --------- */
-/* ----------- */
-/* Anidamiento */
-/* ----------- */
+/* ------------------------------- */
+/* Anidamiento y Pseudo Selectores */
+/* ------------------------------- */
 * {
   margin: 0;
   padding: 0; }
@@ -18,8 +18,17 @@
     padding: 1em;
     background: #F7BE81;
     width: 400px;
-    text-align: center;
-    font-family: arial; }
+    text-align: center; }
+    .contenedor .logo h1 {
+      font-family: arial; }
+      .contenedor .logo h1:hover {
+        color: #fff; }
+      .contenedor .logo h1:before {
+        content: "<-";
+        display: inline-block; }
+      .contenedor .logo h1:after {
+        content: "->";
+        display: inline-block; }
   .contenedor .menu {
     padding: 1em;
     width: calc(100% - 400px);
