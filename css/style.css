@@ -84,9 +84,9 @@
   flex-wrap: wrap; }
   .footer .foot-a, .footer .foot-b {
     width: 25%;
+    background: #3b3b3b;
     height: 200px;
     box-sizing: border-box;
-    background: #a1a1a1;
     border: solid 2px #fff; }
 
 /*# sourceMappingURL=style.css.map */

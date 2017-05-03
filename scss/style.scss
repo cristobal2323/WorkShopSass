@@ -101,6 +101,14 @@ $fuente : arial;
 	@return 100% / $columnas;
 }
 
+@function colorea($columnas){
+	@if($columnas >= 12){
+		@return lighten($menu, 20%);
+	}@else{
+		@return darken($menu, 20%);
+	}
+}
+
 /* ----------------- */
 /* Funciones Nativas */
 /* ----------------- */
@@ -112,9 +120,10 @@ $fuente : arial;
 	flex-wrap: wrap;
 	.foot-a, .foot-b{
 		width: grilla(4);
+		background: colorea(4);
 		height: 200px;
 		box-sizing: border-box;
-		background: lighten($menu, 20%);
+		
 		border: solid 2px $blanco;
 	}
 }
