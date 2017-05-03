@@ -1,0 +1,45 @@
+/* --------- */
+/* Variables */
+/* --------- */
+
+$logo : #F7BE81;
+$menu : #6E6E6E;
+$blanco : #fff;
+$fuente : arial;
+
+
+/* ----------- */
+/* Anidamiento */
+/* ----------- */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.contenedor{
+	background: $menu;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	.logo{
+		padding: 1em;
+		background: $logo;
+		width: 400px;
+		text-align: center;
+		font-family: $fuente;
+	}
+	.menu{
+		padding: 1em;
+		width: calc(100% - 400px);
+		background: #6E6E6E;
+		ul{
+			list-style-type: none;
+			li{
+				color: $blanco;
+				display: inline-block;
+				font-family: $fuente;
+			}
+		}
+	}
+}
