@@ -73,24 +73,24 @@ $fuente : arial;
 /* Extend */
 /* ------ */
 
-.title{
+%title{
 	text-align: center;
 	font-size: 2em;
 }
 
 .principal-1{
 	@include principal($gris,$blanco);
-	@extend .title;
+	@extend %title;
 }
 
 .principal-2{
 	@include principal($logo,$gris);
-	@extend .title;
+	@extend %title;
 }
 
 .principal-3{
 	@include principal($menu,$blanco);
-	@extend .title;
+	@extend %title;
 }
 
 
