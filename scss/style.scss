@@ -5,6 +5,7 @@
 $logo : #F7BE81;
 $menu : #6E6E6E;
 $blanco : #fff;
+$gris:  #ccc;
 $fuente : arial;
 
 /* ------------------------------- */
@@ -55,3 +56,29 @@ $fuente : arial;
 		}
 	}
 }
+
+/* ----- */
+/* Mixin */
+/* ----- */
+
+@mixin principal($background, $color) {
+	width: 900px;
+	margin: 1em auto;
+	background: $background;
+	color: $color;
+	padding: 1em;
+}
+
+.principal-1{
+	@include principal($gris,$blanco)
+}
+
+.principal-2{
+	@include principal($logo,$gris)
+}
+
+.principal-3{
+	@include principal($menu,$blanco)
+}
+
+

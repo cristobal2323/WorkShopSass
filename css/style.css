@@ -40,4 +40,28 @@
         display: inline-block;
         font-family: arial; }
 
+/* ----- */
+/* Mixin */
+/* ----- */
+.principal-1 {
+  width: 900px;
+  margin: 1em auto;
+  background: #ccc;
+  color: #fff;
+  padding: 1em; }
+
+.principal-2 {
+  width: 900px;
+  margin: 1em auto;
+  background: #F7BE81;
+  color: #ccc;
+  padding: 1em; }
+
+.principal-3 {
+  width: 900px;
+  margin: 1em auto;
+  background: #6E6E6E;
+  color: #fff;
+  padding: 1em; }
+
 /*# sourceMappingURL=style.css.map */
