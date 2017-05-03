@@ -71,4 +71,22 @@
   color: #fff;
   padding: 1em; }
 
+/* ----------------- */
+/* Funciones custom */
+/* ----------------- */
+/* ----------------- */
+/* Funciones Nativas */
+/* ----------------- */
+.footer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap; }
+  .footer .foot-a, .footer .foot-b {
+    width: 25%;
+    height: 200px;
+    box-sizing: border-box;
+    background: #a1a1a1;
+    border: solid 2px #fff; }
+
 /*# sourceMappingURL=style.css.map */

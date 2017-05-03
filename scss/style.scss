@@ -93,4 +93,28 @@ $fuente : arial;
 	@extend %title;
 }
 
+/* ----------------- */
+/* Funciones custom */
+/* ----------------- */
 
+@function grilla($columnas){
+	@return 100% / $columnas;
+}
+
+/* ----------------- */
+/* Funciones Nativas */
+/* ----------------- */
+
+.footer{
+	width: 100%;
+	margin: auto;
+	display:flex;
+	flex-wrap: wrap;
+	.foot-a, .foot-b{
+		width: grilla(4);
+		height: 200px;
+		box-sizing: border-box;
+		background: lighten($menu, 20%);
+		border: solid 2px $blanco;
+	}
+}
